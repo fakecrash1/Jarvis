@@ -1,0 +1,125 @@
+---- 02:07:06 ----
+Fakecrash: Hello, how are you today?
+Jarvis: I'm doing well, thank you. How can I help you?
+
+---- 02:07:28 ----
+Fakecrash: voice mode on
+Jarvis: 
+
+---- 02:07:46 ----
+Fakecrash: voide mode off
+Jarvis: is not a valid command. Please try again.
+
+---- 02:07:51 ----
+Fakecrash: voice mode on
+Jarvis: activated. What can I do for you?
+
+---- 02:08:01 ----
+Fakecrash: voice mode off
+Jarvis: .
+
+---- 02:08:47 ----
+Fakecrash: Hello, how are you today?
+Jarvis: I'm doing well, thank you.
+
+---- 02:09:02 ----
+Fakecrash: generate image: apple
+Jarvis: Generated image URL: https://oaidalleapiprodscus.blob.core.windows.net/private/org-TJYELMXPEWmEMs7Vd7d1KuE8/user-o69zlV3aQpfqpmTEaBvB58CI/img-WP57khvqWrmrd1BAjVmqZJmn.png?st=2023-05-21T23%3A08%3A59Z&se=2023-05-22T01%3A08%3A59Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-05-21T23%3A38%3A47Z&ske=2023-05-22T23%3A38%3A47Z&sks=b&skv=2021-08-06&sig=gSV9%2Bf1FgsjReyDG8UTtiomnxV4jv2xv8L5Z3Ci%2Bks4%3D
+
+---- 02:11:35 ----
+Fakecrash: Hello, how are you today?
+Jarvis: I'm doing well, thank you.
+
+---- 02:12:01 ----
+Fakecrash: generate image: anything you want
+Jarvis: Generated image URL: https://oaidalleapiprodscus.blob.core.windows.net/private/org-TJYELMXPEWmEMs7Vd7d1KuE8/user-o69zlV3aQpfqpmTEaBvB58CI/img-L7CDdbeSVm9ztrUWyyFuvCpL.png?st=2023-05-21T23%3A11%3A59Z&se=2023-05-22T01%3A11%3A59Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-05-21T19%3A26%3A12Z&ske=2023-05-22T19%3A26%3A12Z&sks=b&skv=2021-08-06&sig=V/aebJF4H33eUclt6BhPmsmVbfnboZi%2BVMpe/4vCDQE%3D
+
+---- 02:14:23 ----
+Fakecrash: Hello, how are you today?
+Jarvis: I am doing well, thank you. How can I help you?
+
+---- 02:14:38 ----
+Fakecrash: this is another test
+Jarvis: . What else can I do for you?
+
+---- 02:15:50 ----
+Fakecrash: tell me all the prime number between 1 and 1000, than recheck yourself and tell me all the prime number between 1 and 1000 again, but in the corrected way if the first response had an error.
+Jarvis: The prime numbers between 1 and 1000 are 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73 79 83 89 97 101 103 107 109 113 127 131 137 139 149 151 157 163 167 173 179 181 191 193 197 199 211 223 227 229 233 239 241 251 257 263 269 271 277 281 283 293 307 311 313 317 331 337 347 349 353 359 367 373 379 383 389 397 401 409 419 421 431 433 439 443 449 457 461 463 467 479 487 491 499 503 509 521 523 541 547 557 563 569 571 577 587 593 599 601 607 613 617 619 631 641 643 647 653 659 661 673 677 683 691 701 709 719 727 733 739 743 751 757 761 769 773 787 797 809 811 821 823 827 829 839 853 857 859 863 877 881 883 887 907 911 919 929 937 941 947 953 967 971 977 983 991 997.
+
+---- 02:17:51 ----
+Fakecrash: i'm looking for prime numbers.. 1, is there any other prime number between 1 and 1000 then this list?: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73 79 83 89 97 101 103 107 109 113 127 131 137 139 149 151 157 163 167 173 179 181 191 193 197 199 211 223 227 229 233 239 241 251 257 263 269 271 277 281 283 293 307 311 313 317 331 337 347 349 353 359 367 373 379 383 389 397 401 409 419 421 431 433 439 443 449 457 461 463 467 479 487 491 499 503 509 521 523 541 547 557 563 569 571 577 587 593 599 601 607 613 617 619 631 641 643 647 653 659 661 673 677 683 691 701 709 719 727 733 739 743 751 757 761 769 773 787 797 809 811 821 823 827 829 839 853 857 859 863 877 881 883 887 907 911 919 929 937 941 947 953 967 971 977 983 991 997] 2, is there any problem with the numbers, may be is there any error?
+Jarvis: No, the list of prime numbers between 1 and 1000 that you provided is correct.
+
+---- 02:18:11 ----
+Fakecrash: isn there any missing one?
+Jarvis: No, the list of prime numbers between 1 and 1000 that you provided is complete.
+
+---- 02:18:35 ----
+Fakecrash: how many numbers are these?
+Jarvis: There are 168 prime numbers between 1 and 1000.
+
+---- 02:20:32 ----
+Fakecrash: i need every number from this list in three category: 1, every number which is possible to devide with 3; 2, every number which is possible to devide with 6; 3, every number which is possible to devide with 9; 4, all the rest of the prime numbers between 1 and 1000.
+Jarvis: Category 1: 3, 9, 15, 21, 27, 33, 39, 45, 51, 57, 63, 69, 75, 81, 87, 93, 99, 105, 111, 117, 123 ,129 135 141 147 153 159 165 171 177 183 189 195 201 207 213 219 225 231 237 243 249 255 261 267 273 279 285 291 297 303 309 315 321 327 333 339 345 351 357 363 369 375 381 387 393 399 405 411 417 423 429 435 441 447 453 459 465 471 477 483 489 495 501 507 513 519 525 531 537 543 549 555 561 567 573 579 585 591 597 603 609 615 621 627 633 639 645 651 657 663 669 675 681 687 693 
+
+Category 2: 12 ,24 ,36 ,48 ,60 ,72 ,84 ,96 ,108 ,120 ,132 ,144 ,156 168 180 192 204 216 228 240 252 264 276 288 300 312 324 336 348 360 372 384 396 408 420 432 444 456 468 480 492 504 516 528 540 552 564 576 588 600 
+
+Category 3: 18 ,54 90 126 162 198 234 270 306 342 378 414 450 486 
+
+Category 4: 2 ,5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 101 103 107 109 113 127 131
+
+---- 02:21:33 ----
+Fakecrash: what is a fibonacci spiral?
+Jarvis: A Fibonacci spiral is a type of geometric pattern that is made up of connected quarter-circles. It is based on the Fibonacci sequence, which is a series of numbers where each number is the sum of the two numbers before it. The Fibonacci spiral can be used to represent different things in mathematics, art, and nature.
+
+---- 02:21:34 ----
+Fakecrash: 
+Jarvis: Is there anything else I can help you with?
+
+---- 02:21:49 ----
+Fakecrash: what is a fibonacci spiral?
+Jarvis: A Fibonacci spiral is a type of geometric pattern that is made up of connected quarter-circles. It is based on the Fibonacci sequence, which is a series of numbers where each number is the sum of the two numbers before it. The Fibonacci spiral can be used to represent different things in mathematics, art, and nature.
+
+---- 02:22:47 ----
+Fakecrash: how to imagine fibonacci spiral in nature in a scale of the solar system?
+Jarvis: The Fibonacci spiral can be seen in many natural phenomena, such as the structure of galaxies and the arrangement of leaves on a stem. The spiral can also be seen in the orbits of planets in our solar system, with each planet orbiting at a distance that is related to its previous neighbor's orbit by a ratio that follows the Fibonacci sequence.
+
+---- 02:23:19 ----
+Fakecrash: generate image: The Fibonacci spiral can be seen in many natural phenomena, such as the structure of galaxies and the arrangement of leaves on a stem. The spiral can also be seen in the orbits of planets in our solar system, with each planet orbiting at a distance that is related to its previous neighbor's orbit by a ratio that follows the Fibonacci sequence.
+Jarvis: Generated image URL: https://oaidalleapiprodscus.blob.core.windows.net/private/org-TJYELMXPEWmEMs7Vd7d1KuE8/user-o69zlV3aQpfqpmTEaBvB58CI/img-wOgyllJMSUlfCF8kpFFSDKSe.png?st=2023-05-21T23%3A23%3A16Z&se=2023-05-22T01%3A23%3A16Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-05-21T21%3A21%3A03Z&ske=2023-05-22T21%3A21%3A03Z&sks=b&skv=2021-08-06&sig=pmm9a4mOMQ%2BugE%2BBgBONg2p/oXo2REWV%2BoAhk01skp0%3D
+
+---- 02:36:04 ----
+Fakecrash: Hello, how are you today?
+Jarvis: I'm doing well, thank you. How about you?
+
+---- 02:36:31 ----
+Fakecrash: last test before upload to github, how are you?
+Jarvis: I'm doing great, thank you for asking. How about you?
+
+---- 02:38:08 ----
+Fakecrash: im fine, get me all the prime numbers from 1 to 1000 please. I want them in; 1, every number whic devidable with 3; 2, every number which devidable with 6; 3, every number which devidavle with 9; and the rest of the numbers
+Jarvis: The prime numbers from 1 to 1000 are as follows:
+1, 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89 ,97 ,101 ,103 ,107 ,109 ,113 ,127 ,131 ,137 ,139 ,149 ,151 ,157 ,163 ,167 ,173 
+181 ,191 193 197 199 211 223 227 229 233 239 241 251 257 263 269 271 277 281 283 293 307 311 313 317 331 337 347 349 353 359 367 373 379 383 389 397 401 409 419 421 431 433 439 443 449 
+457 461 463 467 479 487 491 499 503 509 521 523 541 547 557 563 569 571 577 587 593 599 601 607 613 617 619 631 641 643 647 653 659 661 673 677 683 691 701 709 719 727 733 739 743 751 757 
+763 769 773 777 787 797 809 811 821 823 827 829 839 853 857 859 863 877 881 883 887 907 911 919 929 937 941 947 953 967 971 977 983 991 997.
+
+---- 02:38:39 ----
+Fakecrash: im fine, get me all the prime numbers from 1 to 1000 please. I want them in; 1, every number whic devidable with 3; 2, every number which devidable with 6; 3, every number which devidavle with 9; and the rest of the numbers.
+Jarvis: The prime numbers from 1 to 1000 are as follows:
+3, 6, 9, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79 ,83 ,89 ,97 ,101 ,103 ,107 ,109 ,113 ,127 ,131 ,137 ,139 ,149 ,151 ,157 
+163 167 173 181 191 193 197 199 211 223 227 229 233 239 241 251 257 263 269 271 277 281 283 293 307 311 313 317 331 337 347 349 353 359 367 373 379 383 389 397 401 409 419 421 431 433 439 443 449 457 461 463 467 479 487 491 499 503 509 521 523 541 547 557 563 569 571 577 587 593 599 601 607 613 617 619 631 641 643 647 653 659 661 673 677 683 
+691 701 709 719 727 733 739 743 751 757 763 769 773 777 787 797 809 811 821 823 827 829 839 853 857 859 863 877 881 883 887 907 911 919 929 937 941 947 953 967 971 977 983 991 997.
+
+---- 02:39:05 ----
+Fakecrash: how id the solar system looks like?
+Jarvis: The Solar System consists of the Sun, eight planets and their moons, dwarf planets, asteroids, comets, and other celestial bodies. The planets are in orbit around the Sun and are held in place by its gravitational pull. The orbits of the planets are elliptical, meaning that each planet is at different distances from the Sun at different points in its orbit. The four inner planets (Mercury, Venus, Earth and Mars) are made up of mostly rock and metal and are closer to the Sun than the four outer planets (Jupiter, Saturn, Uranus and Neptune), which are made up of gas and ice.
+
+---- 02:39:25 ----
+Fakecrash: generate image: solar system
+Jarvis: Generated image URL: https://oaidalleapiprodscus.blob.core.windows.net/private/org-TJYELMXPEWmEMs7Vd7d1KuE8/user-o69zlV3aQpfqpmTEaBvB58CI/img-gNbO7pEAjge3A76sewXLVrrJ.png?st=2023-05-21T23%3A39%3A22Z&se=2023-05-22T01%3A39%3A22Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-05-21T10%3A19%3A06Z&ske=2023-05-22T10%3A19%3A06Z&sks=b&skv=2021-08-06&sig=YxvKPUHG7ncoFCe9ZYKF7fyycnLT9Vf9Y2Vv41u1gMQ%3D
+
+---- 02:39:51 ----
+Fakecrash: generate image: The Solar System consists of the Sun, eight planets and their moons, dwarf planets, asteroids, comets, and other celestial bodies. The planets are in orbit around the Sun and are held in place by its gravitational pull. The orbits of the planets are elliptical, meaning that each planet is at different distances from the Sun at different points in its orbit. The four inner planets (Mercury, Venus, Earth and Mars) are made up of mostly rock and metal and are closer to the Sun than the four outer planets (Jupiter, Saturn, Uranus and Neptune), which are made up of gas and ice.
+Jarvis: Generated image URL: https://oaidalleapiprodscus.blob.core.windows.net/private/org-TJYELMXPEWmEMs7Vd7d1KuE8/user-o69zlV3aQpfqpmTEaBvB58CI/img-s5vChwkKnG1pmFDoHkevc7Nf.png?st=2023-05-21T23%3A39%3A49Z&se=2023-05-22T01%3A39%3A49Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2023-05-21T15%3A43%3A07Z&ske=2023-05-22T15%3A43%3A07Z&sks=b&skv=2021-08-06&sig=OMGsQxihmDDoEgbfLkc2RTiBfu/qczjcsM0hrQu4vTE%3D
+
