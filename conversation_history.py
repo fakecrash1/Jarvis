@@ -1,7 +1,7 @@
 import os
 from datetime import datetime
 
-def log_conversation(user_input, jarvis_response, log_dir='P:\\Python\\Projects\\Jarvis\\Jarvis_Memory\\conversation_history', name="Fakecrash"):
+def log_conversation(user_input, jarvis_response, log_dir='P:\\Python\\Projects\\Jarvis\\Jarvis_Memory\\conversation_history', name="Szoszo"):
     current_date = datetime.now().strftime("%Y-%m-%d")
     current_time = datetime.now().strftime("%H:%M:%S")
     

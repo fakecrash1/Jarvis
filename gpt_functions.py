@@ -21,7 +21,7 @@ if not os.path.exists(image_dir):
 
 # Generate response
 def generate_response(user_input, conversation_history):
-    conversation_history += f"\nFakecrash: {user_input}\nJarvis: "
+    conversation_history += f"\Szoszo: {user_input}\nJarvis: "
 
     response = openai.Completion.create(
         engine="text-davinci-003",
@@ -42,7 +42,7 @@ def generate_response(user_input, conversation_history):
 # Generate image
 
 # Define the path to the directory where the generated images will be saved
-image_dir = "D:\\fakecrash1\\Jarvis\\Jarvis_Memory\\images"
+image_dir = "P:\\Python\\Projects\\Jarvis\\Jarvis_Memory\\images"
 
 def generate_image(image_prompt):
     image_response = openai.Image.create(

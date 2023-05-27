@@ -27,13 +27,13 @@ prompt = "Hello, how are you today?"
 response = generate_response(prompt, conversation_history)
 message = response.strip()
 print("Jarvis: " + message)
-conversation_history += f"\nFakecrash: {prompt}\nJarvis: {message}"
+conversation_history += f"\Szoszo: {prompt}\nJarvis: {message}"
 
-log_conversation(prompt, message, name="Fakecrash")
+log_conversation(prompt, message, name="Szoszo")
 
 while True:
-    user_input = input("Fakecrash: ")
-    conversation_history += f"\nFakecrash: {user_input}"
+    user_input = input("Szoszo: ")
+    conversation_history += f"\Szoszo: {user_input}"
 
     if user_input.lower() == "help":
         print_help()
@@ -52,12 +52,14 @@ while True:
         urllib.request.urlretrieve(image_url, image_path)
 
         conversation_history += f"\nJarvis: Generated image URL: {image_url}"
-        log_conversation(user_input, f"Generated image URL: {image_url}", name="Fakecrash")
+        log_conversation(user_input, f"Generated image URL: {image_url}", name="Szoszo")
+    if "exit" in user_input.lower():
+        exit()
     else:
         response = generate_response(user_input, conversation_history)
         message = response.strip()
 
-        print("Fakecrash: " + user_input)
+        print("Szoszo: " + user_input)
         print("Jarvis: " + message)
         conversation_history += f"\nJarvis: {message}"
-        log_conversation(user_input, message, name="Fakecrash")
+        log_conversation(user_input, message, name="Szoszo")
