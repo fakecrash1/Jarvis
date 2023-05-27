@@ -2,6 +2,8 @@ import openai
 from datetime import datetime
 import os
 import urllib.request
+import pywhatkit
+
 
 # API Key
 
@@ -67,4 +69,6 @@ def print_help():
     '''
     print(help_message)
 
-    
+# Play music
+def play_music(song):
+    pywhatkit.playonyt(song)

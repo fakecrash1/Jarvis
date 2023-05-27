@@ -1,7 +1,7 @@
 #import functions / may be not everything needed
 import os
 import openai
-from gpt_functions import generate_response, generate_image, print_help
+from gpt_functions import generate_response, generate_image, print_help, play_music
 import requests
 import urllib.request
 import shutil
@@ -50,7 +50,10 @@ while True:
         image_path = os.path.join(image_dir, image_filename)
 
         urllib.request.urlretrieve(image_url, image_path)
+    elif "play:" in user_input.lower():
+        song = user_input.lower().replace("play", "").strip()
 
+        play_music(song)
         conversation_history += f"\nJarvis: Generated image URL: {image_url}"
         log_conversation(user_input, f"Generated image URL: {image_url}", name="Fakecrash")
     else:
@@ -61,3 +64,5 @@ while True:
         print("Jarvis: " + message)
         conversation_history += f"\nJarvis: {message}"
         log_conversation(user_input, message, name="Fakecrash")
+
+    
