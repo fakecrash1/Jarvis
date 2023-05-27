@@ -22,7 +22,7 @@ if not os.path.exists(image_dir):
     os.makedirs(image_dir)
 
 conversation_history = ""
-prompt = "Hello, how are you today?"
+prompt = "Hello Jarvis, how are you today?"
 
 response = generate_response(prompt, conversation_history)
 message = response.strip()

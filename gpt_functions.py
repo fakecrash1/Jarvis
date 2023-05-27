@@ -6,7 +6,6 @@ import pywhatkit
 
 
 # API Key
-
 api_key_path = './Api_keys/api_key_openai.txt'
 
 # Read the API key from the text file
@@ -24,7 +23,6 @@ if not os.path.exists(image_dir):
 # Generate response
 def generate_response(user_input, conversation_history):
     conversation_history += f"\nFakecrash: {user_input}\nJarvis: "
-
     response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=conversation_history + user_input,
@@ -36,9 +34,7 @@ def generate_response(user_input, conversation_history):
         presence_penalty=0.5,
         best_of=1,
     )
-
     message = response.choices [0].text.strip()
-
     return message
 
 # Generate image
@@ -51,7 +47,6 @@ def generate_image(image_prompt):
     image_url = image_response['data'][0]['url']
 
     return image_url
-
 
 # Play music
 def play_music(song):
