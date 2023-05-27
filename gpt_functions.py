@@ -56,6 +56,11 @@ def generate_image(image_prompt):
 
     return image_url
 
+
+# Play music
+def play_music(song):
+    pywhatkit.playonyt(song)
+
 # Get help
 def print_help():
     help_message = '''
@@ -63,12 +68,9 @@ def print_help():
 
     1. Type your questions or statements normally, and the chatbot will respond.
     2. To generate an image, type "generate image:" followed by a description ("generate image: a beautiful sunset").
-    3. To exit the chat, type "exit" or "quit". #(Function under development)
-
+    3. Play anything from Youtube
+    4. To exit the chat, type "exit" or "quit".
+    
     Note: If the chatbot provides an unsatisfactory response, try rephrasing your question or statement.
     '''
     print(help_message)
-
-# Play music
-def play_music(song):
-    pywhatkit.playonyt(song)

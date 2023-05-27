@@ -39,23 +39,27 @@ while True:
         print_help()
         continue
 
-    if "generate image:" in user_input.lower():
+    elif "generate image:" in user_input.lower():
         image_prompt = user_input.replace("generate image:", "").strip()
         image_url = generate_image(image_prompt)
         print("Generated image URL:", image_url)
-
         now = datetime.now()
         date_time = now.strftime("%Y-%m-%d_%H-%M-%S")
         image_filename = f"{date_time}.png"
         image_path = os.path.join(image_dir, image_filename)
-
         urllib.request.urlretrieve(image_url, image_path)
-    elif "play:" in user_input.lower():
-        song = user_input.lower().replace("play", "").strip()
-
-        play_music(song)
         conversation_history += f"\nJarvis: Generated image URL: {image_url}"
         log_conversation(user_input, f"Generated image URL: {image_url}", name="Fakecrash")
+        continue
+
+    elif "play:" in user_input.lower():
+        song = user_input.lower().replace("play", "").strip()
+        play_music(song)
+        continue
+
+    elif "exit" or "quit" in user_input.lower():
+        exit()
+
     else:
         response = generate_response(user_input, conversation_history)
         message = response.strip()
@@ -65,4 +69,3 @@ while True:
         conversation_history += f"\nJarvis: {message}"
         log_conversation(user_input, message, name="Fakecrash")
 
-    
