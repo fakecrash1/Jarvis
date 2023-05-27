@@ -1,7 +1,7 @@
 #import functions / may be not everything needed
 import os
 import openai
-from gpt_functions import generate_response, generate_image, print_help
+from gpt_functions import generate_response, generate_image, print_help, play_music
 import requests
 import urllib.request
 import shutil
@@ -9,6 +9,8 @@ from io import BytesIO
 from PIL import Image
 from datetime import datetime
 from conversation_history import log_conversation
+import subprocess
+import pywhatkit
 
 api_key_path = "P:\\Python\\Projects\\api_key_openai.txt"
 
@@ -39,7 +41,7 @@ while True:
         print_help()
         continue
 
-    if "generate image:" in user_input.lower():
+    elif "generate image:" in user_input.lower():
         image_prompt = user_input.replace("generate image:", "").strip()
         image_url = generate_image(image_prompt)
         print("Generated image URL:", image_url)
@@ -53,7 +55,16 @@ while True:
 
         conversation_history += f"\nJarvis: Generated image URL: {image_url}"
         log_conversation(user_input, f"Generated image URL: {image_url}", name="Szoszo")
-    if "exit" in user_input.lower():
+    
+#    elif "start:" in user_input.lower():
+#        application_name = user_input.lower().replace("start:", "").strip()
+#        start_application(application_name)
+    elif "play:" in user_input.lower():
+        song = user_input.lower().replace("play", "").strip()
+
+        play_music(song)
+
+    elif "exit" in user_input.lower():
         exit()
     else:
         response = generate_response(user_input, conversation_history)

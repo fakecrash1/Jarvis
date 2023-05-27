@@ -2,6 +2,8 @@ import openai
 from datetime import datetime
 import os
 import urllib.request
+import subprocess
+import pywhatkit
 
 # API Key
 
@@ -67,4 +69,11 @@ def print_help():
     '''
     print(help_message)
 
-    
+#Start application
+
+def start_application(application_name):
+    subprocess.run(application_name, shell=True)
+
+#Play music
+def play_music(song):
+    pywhatkit.playonyt(song)
