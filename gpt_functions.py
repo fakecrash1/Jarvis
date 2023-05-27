@@ -5,7 +5,7 @@ import urllib.request
 
 # API Key
 
-api_key_path = 'D:\\fakecrash1\\Api_keys\\api_key_openai.txt'
+api_key_path = 'P:\\Python\\Projects\\api_key_openai.txt'
 
 # Read the API key from the text file
 with open(api_key_path, 'r') as f:
@@ -13,7 +13,7 @@ with open(api_key_path, 'r') as f:
 openai.api_key = openai_api_key
 
 # Define the path to the directory where the generated images will be saved
-image_dir = "D:\\fakecrash1\\Jarvis\\Jarvis_Memory\\images"
+image_dir = "P:\\Python\\Projects\\Jarvis\\Jarvis_Memory\\images"
 # Check if the directory exists, create it if it doesn't
 if not os.path.exists(image_dir):
     os.makedirs(image_dir)
