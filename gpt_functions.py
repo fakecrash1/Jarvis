@@ -7,7 +7,7 @@ import pywhatkit
 
 # API Key
 
-api_key_path = 'D:\\fakecrash1\\Api_keys\\api_key_openai.txt'
+api_key_path = './Api_keys/api_key_openai.txt'
 
 # Read the API key from the text file
 with open(api_key_path, 'r') as f:
