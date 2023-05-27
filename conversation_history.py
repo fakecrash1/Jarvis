@@ -1,7 +1,7 @@
 import os
 from datetime import datetime
 
-def log_conversation(user_input, jarvis_response, log_dir='D:\\fakecrash1\\Jarvis\\Jarvis_Memory\\conversation_history', name="Fakecrash"):
+def log_conversation(user_input, jarvis_response, log_dir='./Jarvis_Memory/conversation_history', name="Fakecrash"):
     current_date = datetime.now().strftime("%Y-%m-%d")
     current_time = datetime.now().strftime("%H:%M:%S")
     
@@ -16,7 +16,7 @@ def log_conversation(user_input, jarvis_response, log_dir='D:\\fakecrash1\\Jarvi
         f.write(name + ": " + user_input + "\n")
         f.write("Jarvis: " + jarvis_response + "\n\n")
 
-def read_conversation(date, log_dir='D:\\fakecrash1\\Jarvis\\Jarvis_Memory\\conversation_history'):
+def read_conversation(date, log_dir):
     log_file = f"{date}_conversation.log"
     log_file_path = os.path.join(log_dir, log_file)
 

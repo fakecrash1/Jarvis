@@ -15,7 +15,7 @@ with open(api_key_path, 'r') as f:
 openai.api_key = openai_api_key
 
 # Define the path to the directory where the generated images will be saved
-image_dir = "D:\\fakecrash1\\Jarvis\\Jarvis_Memory\\images"
+image_dir = "./Jarvis_Memory/images"
 # Check if the directory exists, create it if it doesn't
 if not os.path.exists(image_dir):
     os.makedirs(image_dir)
@@ -42,10 +42,6 @@ def generate_response(user_input, conversation_history):
     return message
 
 # Generate image
-
-# Define the path to the directory where the generated images will be saved
-image_dir = "D:\\fakecrash1\\Jarvis\\Jarvis_Memory\\images"
-
 def generate_image(image_prompt):
     image_response = openai.Image.create(
         prompt=image_prompt,

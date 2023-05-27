@@ -1,2 +1,6 @@
 /Jarvis_Memory
 /__pycache__
+/Api_keys/api_key_openai.txt
+*.pyc
+__pycache__/gpt_functions.cpython-311.pyc
+__pycache__/conversation_history.cpython-311.pyc

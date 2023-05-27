@@ -10,14 +10,14 @@ from PIL import Image
 from datetime import datetime
 from conversation_history import log_conversation
 
-api_key_path = "D:\\fakecrash1\\Api_keys\\api_key_openai.txt"
+api_key_path = "./Api_keys/api_key_openai.txt"
 
 with open(api_key_path, 'r') as f:
     openai_api_key = f.read().strip()
 
 openai.api_key = openai_api_key
 
-image_dir = "D:\\fakecrash1\\Jarvis\\Jarvis_Memory\\images"
+image_dir = "./Jarvis_Memory/images"
 if not os.path.exists(image_dir):
     os.makedirs(image_dir)
 
