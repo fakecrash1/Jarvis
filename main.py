@@ -9,6 +9,9 @@ from io import BytesIO
 from PIL import Image
 from datetime import datetime
 from conversation_history import log_conversation
+from users import *
+
+selected_user = select_user()
 
 api_key_path = "./Api_keys/api_key_openai.txt"
 
@@ -24,16 +27,13 @@ if not os.path.exists(image_dir):
 conversation_history = ""
 prompt = "Hello Jarvis, how are you today?"
 
-response = generate_response(prompt, conversation_history)
-message = response.strip()
-print("Jarvis: " + message)
-conversation_history += f"\nFakecrash: {prompt}\nJarvis: {message}"
+message, conversation_history = generate_response(prompt, conversation_history)
 
-log_conversation(prompt, message, name="Fakecrash")
+print(message)
+log_conversation(prompt, message, selected_user.name)
 
 while True:
-    user_input = input("Fakecrash: ")
-    conversation_history += f"\nFakecrash: {user_input}"
+    user_input = input(selected_user.name+": ")
 
     if user_input.lower() == "help":
         print_help()
@@ -49,7 +49,7 @@ while True:
         image_path = os.path.join(image_dir, image_filename)
         urllib.request.urlretrieve(image_url, image_path)
         conversation_history += f"\nJarvis: Generated image URL: {image_url}"
-        log_conversation(user_input, f"Generated image URL: {image_url}", name="Fakecrash")
+        log_conversation(user_input, f"Generated image URL: {image_url}", selected_user.name)
         continue
 
     elif "play:" in user_input.lower():
@@ -57,15 +57,10 @@ while True:
         play_music(song)
         continue
 
-    elif "exit" or "quit" in user_input.lower():
+    elif "exit" in user_input.lower() or "quit" in user_input.lower():
         exit()
 
     else:
-        response = generate_response(user_input, conversation_history)
-        message = response.strip()
-
-        print("Fakecrash: " + user_input)
-        print("Jarvis: " + message)
-        conversation_history += f"\nJarvis: {message}"
-        log_conversation(user_input, message, name="Fakecrash")
-
+        message, conversation_history = generate_response(user_input, conversation_history)
+        print(message)
+        log_conversation(user_input, message, selected_user.name)

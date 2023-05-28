@@ -3,6 +3,7 @@ from datetime import datetime
 import os
 import urllib.request
 import pywhatkit
+from users import user_manager
 
 
 # API Key
@@ -22,10 +23,9 @@ if not os.path.exists(image_dir):
 
 # Generate response
 def generate_response(user_input, conversation_history):
-    conversation_history += f"\nFakecrash: {user_input}\nJarvis: "
     response = openai.Completion.create(
         engine="text-davinci-003",
-        prompt=conversation_history + user_input,
+        prompt=conversation_history + "\n" + user_manager.current_user.name + ": " + user_input,
         max_tokens=320,
         n=1,
         stop=None,
@@ -33,9 +33,14 @@ def generate_response(user_input, conversation_history):
         frequency_penalty=0.5,
         presence_penalty=0.5,
         best_of=1,
-    )
-    message = response.choices [0].text.strip()
-    return message
+        )
+    message = response.choices[0].text.strip()
+    conversation_history += "\n" + user_manager.current_user.name + ": " + user_input + "\n" + message
+    return message, conversation_history
+
+
+
+
 
 # Generate image
 def generate_image(image_prompt):
@@ -43,7 +48,7 @@ def generate_image(image_prompt):
         prompt=image_prompt,
         n=1,
         size="1024x1024"
-    )
+        )
     image_url = image_response['data'][0]['url']
 
     return image_url
