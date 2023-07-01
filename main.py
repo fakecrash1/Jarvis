@@ -10,6 +10,7 @@ from PIL import Image
 from datetime import datetime
 from conversation_history import log_conversation
 from users import *
+# from models import *
 
 selected_user = select_user()
 
