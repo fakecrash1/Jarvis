@@ -63,5 +63,5 @@ while True:
 
     else:
         message, conversation_history = generate_response(user_input, conversation_history)
-        print("J.A.R.V.I.S.: "+message)
+        print("Jarvis: "+message)
         log_conversation(user_input, message, selected_user.name)
