@@ -25,19 +25,20 @@ def select_model():
     return available_models[selected - 1]
 
 # Generate response  
-def generate_response(user_input, conversation_history):  
+def generate_response(user_input, conversation_history):
     model = select_model()
-    response = openai.Completion.create(  
-    engine=model,  
-    prompt=conversation_history + "\n" + user_manager.current_username + ": " + user_input,  
-    max_tokens=320,  
-    n=1,  
-    stop=None,  
-    temperature=0.5,  
-    frequency_penalty=0.5,  
-    presence_penalty=0.5,  
-    best_of=1,  
-    )  
-    message = response.choices[0].text.strip()  
-    conversation_history += "\n" + user_manager.current_user.name + ": " + user_input + "\n" + message  
-    return message, conversation_history  
+
+    system_content = "You are JARVIS (Just A Rather Very Intelligent System), respectively the household assistance of the "+user_manager.current_user.name+" family and designed by Mr. "+user_manager.current_user.name+" (as Jarvis, you call the user as Sir.). You are a helpful AI assistant and your purpose is to make human life better, with helpful answers."
+
+    response = openai.ChatCompletion.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": system_content},
+            {"role": "user", "content": conversation_history + "\\n" + user_manager.current_user.name + ": " + user_input}
+        ],
+        max_tokens=320,
+    )
+
+    message = response['choices'][0]['message']['content'].strip()
+    conversation_history += "\\n" + user_manager.current_user.name + ": " + user_input + "\\n" + message
+    return message, conversation_history

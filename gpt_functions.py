@@ -23,20 +23,21 @@ if not os.path.exists(image_dir):
 
 # Generate response
 def generate_response(user_input, conversation_history):
-    response = openai.Completion.create(
-        engine="text-davinci-003",
-        prompt=conversation_history + "\n" + user_manager.current_user.name + ": " + user_input,
+    system_content = "You are JARVIS (Just A Rather Very Intelligent System), respectively the household assistance of the "+user_manager.current_user.name+" family and designed by Mr. "+user_manager.current_user.name+" (as Jarvis, you call the user as Sir.). You are a helpful AI assistant and your purpose is to make human life better, with helpful answers."
+
+    response = openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": system_content},
+            {"role": "user", "content": conversation_history + "\\n" + user_manager.current_user.name + ": " + user_input}
+        ],
         max_tokens=320,
-        n=1,
-        stop=None,
-        temperature=0.5,
-        frequency_penalty=0.5,
-        presence_penalty=0.5,
-        best_of=1,
-        )
-    message = response.choices[0].text.strip()
-    conversation_history += "\n" + user_manager.current_user.name + ": " + user_input + "\n" + message
+    )
+
+    message = response['choices'][0]['message']['content'].strip()
+    conversation_history += "\\n" + user_manager.current_user.name + ": " + user_input + "\\n" + message
     return message, conversation_history
+
 
 
 
