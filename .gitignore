@@ -13,3 +13,4 @@ __pycache__/conversation_history.cpython-311.pyc
 /Fakecrash
 /Szoszo
 *.pyc
+/Api_keys/api_key_google.txt
