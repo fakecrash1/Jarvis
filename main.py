@@ -10,6 +10,7 @@ from PIL import Image
 from datetime import datetime
 from conversation_history import log_conversation
 from users import *
+from search import *
 # from models import *
 
 selected_user = select_user()
@@ -56,6 +57,22 @@ while True:
     elif "play:" in user_input.lower():
         song = user_input.lower().replace("play", "").strip()
         play_music(song)
+        continue
+
+    elif user_input.lower().startswith("search:"):
+        search_term = user_input.split("search:", 1)[1].strip()
+        
+        # Reading the Google API key and CSE ID
+        with open("./Api_keys/google_api_key.txt", 'r') as f:
+            google_api_key = f.read().strip()
+        with open("./Apis/google_CSE.txt", 'r') as f:
+            google_cse_id = f.read().split("cx=", 1)[1].split("\">")[0]
+
+        search_results = google_search(search_term, google_api_key, google_cse_id)
+        
+        # Displaying the first search result
+        first_result = search_results["items"][0]
+        print("Jarvis: Here's what I found -", first_result["title"], first_result["link"])
         continue
 
     elif "exit" == user_input.lower() or "quit" == user_input.lower():

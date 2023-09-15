@@ -14,3 +14,5 @@ __pycache__/conversation_history.cpython-311.pyc
 /Szoszo
 *.pyc
 /Api_keys/api_key_google.txt
+/Api_keys/google_CSE.txt
+/Api_keys/google_cse_id.txt
