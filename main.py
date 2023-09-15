@@ -63,9 +63,9 @@ while True:
         search_term = user_input.split("search:", 1)[1].strip()
         
         # Reading the Google API key and CSE ID
-        with open("./Api_keys/google_api_key.txt", 'r') as f:
+        with open("./Api_keys/api_key_google.txt", 'r') as f:
             google_api_key = f.read().strip()
-        with open("./Apis/google_CSE.txt", 'r') as f:
+        with open("./Api_keys/google_CSE.txt", 'r') as f:
             google_cse_id = f.read().split("cx=", 1)[1].split("\">")[0]
 
         search_results = google_search(search_term, google_api_key, google_cse_id)
