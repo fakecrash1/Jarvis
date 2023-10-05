@@ -1,6 +1,32 @@
 from users import *
 import openai
 
+
+
+api_key_path = "./Api_keys/api_key_openai.txt"
+with open(api_key_path, 'r') as f:
+    openai_api_key = f.read().strip()
+
+def fetch_openai_model_list():
+    try:
+        openai.api_key = openai_api_key
+        models = openai.Model.list()
+        model_names = [model['id'] for model in models['data']]
+        return model_names
+    except Exception as e:
+        print(f"An error occurred while fetching the model list: {e}")
+        return []
+
+available_models_fetched = fetch_openai_model_list()
+
+def select_fecthed_model():
+    print("Please select a model from the following list:")
+    for i, model in enumerate(available_models_fetched):
+        print(f"{i+1}. {model}")
+    selected = int(input("Enter the number of the model you wish to use: "))
+    return available_models_fetched[selected - 1]
+
+
 # List of models
 available_models = [
     'gpt-3.5-turbo', 'gpt-3.5-turbo-0301', 'gpt-3.5-turbo-0613', 'gpt-3.5-turbo-16k', 'gpt-3.5-turbo-16k-0613',

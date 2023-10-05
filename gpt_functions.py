@@ -64,8 +64,9 @@ def print_help():
     Here are some tips and commands for using the chatbot:
 
     1. Type your questions or statements normally, and the chatbot will respond.
-    2. To generate an image, type "generate image:" followed by a description ("generate image: a beautiful sunset").
-    3. Play anything from Youtube
+    2. To generate an image, type "generate image:" followed by a description, example: ("generate image: a beautiful sunset").
+    3. Play anything from Youtube, use command: "play:"
+    4. Search on Google with command: "search:"
     4. To exit the chat, type "exit" or "quit".
     
     Note: If the chatbot provides an unsatisfactory response, try rephrasing your question or statement.
