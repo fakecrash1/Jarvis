@@ -16,3 +16,5 @@ __pycache__/conversation_history.cpython-311.pyc
 /Api_keys/api_key_google.txt
 /Api_keys/google_CSE.txt
 /Api_keys/google_cse_id.txt
+/__pycache__/gpt_functions.cpython-311.pyc
+/__pycache__/conversation_history.cpython-311.pyc
