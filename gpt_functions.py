@@ -26,7 +26,7 @@ def generate_response(user_input, conversation_history):
     system_content = "You are JARVIS (Just A Rather Very Intelligent System), respectively the household assistance of the "+user_manager.current_user.name+" family and designed by Mr. "+user_manager.current_user.name+" (as Jarvis, you call the user as Sir.). You are a helpful AI assistant and your purpose is to make human life better, with helpful answers."
 
     response = openai.ChatCompletion.create(
-        model="gpt-4",
+        model="gpt-4o",
         messages=[
             {"role": "system", "content": system_content},
             {"role": "user", "content": conversation_history + "\\n" + user_manager.current_user.name + ": " + user_input}
@@ -35,7 +35,7 @@ def generate_response(user_input, conversation_history):
     )
 
     message = response['choices'][0]['message']['content'].strip()
-    conversation_history += "\\n" + user_manager.current_user.name + ": " + user_input + "\\n" + message
+    conversation_history += "\\n" + user_manager.current_user.name + ": " + user_input + "\\n" + "\\n" + message + "\\n"
     return message, conversation_history
 
 
